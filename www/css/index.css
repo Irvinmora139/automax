@@ -19,7 +19,7 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Elimina la subrayado predeterminado de los enlaces */
-    color: #fff; /* Ajusta el color del texto según tu preferencia */
+    text-decoration: none; 
+    color: #fff;
 }
 
