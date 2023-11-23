@@ -1,0 +1,37 @@
+.headerContainer {
+    display: flex;
+    background-color: rgb(162, 95, 95);
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  img[src]{
+    border: 1px;
+    height: 300px;
+    width: 350px;
+}
+
+  
+
