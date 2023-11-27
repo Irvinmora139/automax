@@ -50,7 +50,7 @@ img[src]{
 
 .info{
     flex: 1; 
-    padding: 20px; 
+    padding: 20px;
 }
 
 p{
@@ -87,7 +87,6 @@ p{
     text-align: left;
     justify-content: flex-start;
     font-family: Arial;
-    border-bottom: 2px solid #f80404;
 }
 
 .details_der{
@@ -101,7 +100,98 @@ p{
     text-align: left;
     justify-content: flex-start;
     font-family: Arial;
-    border-bottom: 2px solid #f80404;
 }
   
+#precio{
+    color:rgb(236, 27, 27);
+    font-size: 15px;
+}
+.mas_info{
+    flex: 1;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    text-align: left;
+    justify-content: flex-start;
+    font-family: Arial;
+}
 
+.texto_arr{
+    margin-bottom: 0px;
+}
+
+#texto_ab{
+    margin-top: 0px;
+    font-size: 20px;
+    border-bottom: 2px solid #969191;
+}
+
+.texto_info{
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.info2{
+    flex: 2; 
+    padding: 50px;
+}
+
+.divison2{
+    display: flex;
+    background-color: #000000;
+}
+
+.imagen_izq2{
+    height: 300px;
+    
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 20px;
+    flex: 0 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#titulo_info{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.nombre2{
+    height: 45px;
+    flex: 1;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    flex: 0 0 auto;
+}
+
+#details2{
+    text-align: left;
+    justify-content: flex-start;
+    font-family: Arial;
+}
+
+#texto2{
+    color: #ffffff;
+}
+
+.mas_imagenes{
+    display: flex;
+}
+
+.imagen_izq{
+    height: 300px;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    padding: 20px;
+    flex: 0 0 auto;
+}
