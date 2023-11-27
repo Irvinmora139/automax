@@ -1,6 +1,6 @@
 .headerContainer {
     display: flex;
-    background-color: rgb(162, 95, 95);
+    background-color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     height: 40px;
@@ -65,7 +65,7 @@ p{
     color: #000000;
     padding: 20px;
     flex: 0 0 auto;
-    border-bottom: 2px solid #f80404;
+    border-bottom: 2px solid #000000;
 }
 
 #vehiculo{
@@ -73,7 +73,7 @@ p{
     margin-top: 0px;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
 .details_izq{
@@ -101,11 +101,14 @@ p{
     justify-content: flex-start;
     font-family: Arial;
 }
-  
-#precio{
-    color:rgb(236, 27, 27);
+
+#costo{
+    color: #000000;
+    margin-left: 20px;
     font-size: 15px;
+    
 }
+
 .mas_info{
     flex: 1;
     background-color: #ffffff;
@@ -124,7 +127,7 @@ p{
 }
 
 #texto_ab{
-    margin-top: 0px;
+    margin-top: 20px;
     font-size: 20px;
     border-bottom: 2px solid #969191;
 }
@@ -132,6 +135,7 @@ p{
 .texto_info{
     margin-top: 0px;
     font-size: 18px;
+    color: #5b5959;
 }
 
 .info2{
@@ -142,11 +146,11 @@ p{
 .divison2{
     display: flex;
     background-color: #000000;
+    margin-bottom: 150px; 
 }
 
 .imagen_izq2{
     height: 300px;
-    
     flex: 1;
     background-color: rgb(0, 0, 0);
     color: #ffffff;
@@ -156,6 +160,12 @@ p{
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.imagen_izq2 img {
+    width: 480px; 
+    height: 100%; 
+    display: block; 
 }
 
 #titulo_info{
@@ -194,4 +204,37 @@ p{
     color: #ffffff;
     padding: 20px;
     flex: 0 0 auto;
+}
+
+.mas_imagenes {
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 50px; 
+}
+
+.imagenes_extra {
+    flex: 1; 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+.imagenes_extra img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.barra_abajo{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: left;
+    align-items: left;
+    height: 60px;
+    font-family: Arial;
+}
+
+#texto_barra{
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 20px ;
 }
