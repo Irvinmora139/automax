@@ -24,13 +24,13 @@ nav ul li a {
 
 .imgContainer {
     position: relative;
-    height: 100vh; /* Hace que la imagen ocupe toda la altura de la pantalla */
+    height: 100vh; 
 }
 
 .imgContainer img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor manteniendo la relación de aspecto */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     object-position: center;
 }
 
@@ -39,19 +39,62 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; /* Centra el contenido */
-    color: #fff; /* Ajusta el color del texto según tu preferencia */
+    text-align: center; 
+    color: #fff; 
 }
 
 .content h1, .content h3 {
-    margin: 0; /* Elimina el margen predeterminado de h1 y h3 */
+    margin: 0; 
 }
 
 h1 {
-    font-size: 3em; /* Ajusta el tamaño del texto según tu preferencia */
+    font-size: 3em; 
 }
 
 h3 {
-    font-size: 1.5em; /* Ajusta el tamaño del texto según tu preferencia */
+    font-size: 1.5em; 
+}
+
+.vehiculosContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.containerVehiculos{
+    display: flex;
+    width: 50rem;
+    height: 20rem;
+    background-color: #ffff;
+    border: 2px solid #ccc;
+    margin: 2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.containerVehiculos:hover {
+    border-color: #000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.imgCarro{
+    width: 30%;
+}
+
+.datosBase{
+    width: 45%;
+    background-color: beige;
+}
+
+.verAuto{
+    width: 25%;
+}
+footer{
+    padding-top: 0px;
+    background-color: black;
+}
+
+footer p{
+    margin: 0px;
 }
 
