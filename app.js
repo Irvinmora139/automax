@@ -38,6 +38,9 @@ http.createServer((request, response)=> {
                     case 'jpg':
                         response.writeHead(200, {"Content_Type":"image/jpg"});  
                         break;
+                    case 'png':
+                        response.writeHead(200, {"Content_Type":"image/png"});  
+                        break;
                     default:
                         response.writeHead(200, {"Content_Type":"text/plain"});  
                         break;
