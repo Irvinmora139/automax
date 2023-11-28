@@ -44,8 +44,6 @@ img[src]{
     flex: 1;
     background-color: rgb(255, 255, 255);
     color: #ffffff;
-    padding: 20px;
-    flex: 0 0 auto;
 }
 
 .info{
@@ -73,7 +71,7 @@ p{
     margin-top: 0px;
     justify-content: center;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium'; 
 }
 
 .details_izq{
@@ -87,6 +85,7 @@ p{
     text-align: left;
     justify-content: flex-start;
     font-family: Arial;
+    
 }
 
 .details_der{
@@ -106,7 +105,6 @@ p{
     color: #000000;
     margin-left: 20px;
     font-size: 15px;
-    
 }
 
 .mas_info{
@@ -123,7 +121,7 @@ p{
 }
 
 .texto_arr{
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 #texto_ab{
