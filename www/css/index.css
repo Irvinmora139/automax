@@ -1,19 +1,18 @@
 .headerContainer {
     display: flex;
-    background-color: rgb(162, 95, 95);
+    background-color: #ff690f;
     justify-content: center;
     align-items: center;
     height: 40px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-flex;
     margin-right: 10px;
     font-size: 25px;
 }
@@ -21,5 +20,38 @@ nav ul li {
 nav ul li a {
     text-decoration: none; 
     color: #fff;
+}
+
+.imgContainer {
+    position: relative;
+    height: 100vh; /* Hace que la imagen ocupe toda la altura de la pantalla */
+}
+
+.imgContainer img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor manteniendo la relación de aspecto */
+    object-position: center;
+}
+
+.imgContainer .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centra el contenido */
+    color: #fff; /* Ajusta el color del texto según tu preferencia */
+}
+
+.content h1, .content h3 {
+    margin: 0; /* Elimina el margen predeterminado de h1 y h3 */
+}
+
+h1 {
+    font-size: 3em; /* Ajusta el tamaño del texto según tu preferencia */
+}
+
+h3 {
+    font-size: 1.5em; /* Ajusta el tamaño del texto según tu preferencia */
 }
 
