@@ -1,0 +1,77 @@
+.headerContainer {
+    display: flex;
+    background-color: rgb(162, 95, 95);
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff;
+}
+h2{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-size: 35px;
+    height: 40px;
+    font-family: Arial;
+}
+.contacto p{
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    color: rgb(162, 95, 95);
+}
+.chat img[src]{
+    width: 45px;
+    height: 45px;
+    align-items: left;
+}
+h3{
+    text-align: left;
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Verdana;
+}
+.llamada img[src]{
+    width: 38px;
+    height: 38px;
+    align-items: left;
+    margin-top: 20px;
+}
+.llamada p{
+    font-family: Verdana;
+}
+.email img[src]{
+    width: 38px;
+    height: 38px;
+    align-items: left;
+    margin-top: 20px;
+}
+.email p{
+    font-family: Verdana;
+}
+.redesSociales img[src]{
+    width: 38px;
+    height: 38px;
+}
+.redesSociales p{
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    color: rgb(162, 95, 95);
+}
