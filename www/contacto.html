@@ -18,7 +18,18 @@
         <div class="contacto">
             <h2>Contáctanos</h2>
             <p>-- Comunícate con nosostros, tu opinión es importante para mejorar --</p>
+        
+            <form action="/" method="POST">  
+                <label for="nombre">Nombre completo:</label>
+                <input id="nombre" name="nombre" type="text"  required/>
+                <label for="correo">Correo electrónico:</label>
+                <input id="correo" name="correo" type="email"   required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
+
         <div class="chat">
             <img src="./images/mensaje.png" >
             <h3>Chat</h3>
@@ -39,5 +50,7 @@
             <a href="https://www.instagram.com"><img src="./images/insta.png"></a>
             <a href="https://www.twitter.com"><img src="./images/tuiter.png"> </a>
         </div>
+
+        
     </body>
 </html>

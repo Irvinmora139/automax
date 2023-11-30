@@ -4,16 +4,27 @@ const fs = require('fs');
 http.createServer((request, response)=> {
     const file = request.url == '/' ? './www/index.html' : `./www/${request.url}`;
 
-    if(request.url == '/registro'){
+    if (request.method === 'POST') {
         let data = [];
-        request.on("data", value =>{
+        request.on('data', (value) => {
             data.push(value);
-        }).on("end", ()=>{
-            let params = Buffer.concat(data).toString();
-            response.write(params);
-            response.end();
+        }).on('end', () => {
+            const params = Buffer.concat(data).toString();
+            
+            fs.appendFile('formulario.txt', params + '\n', (err) => {
+                if (err) {
+                    response.writeHead(500, { 'Content-Type': 'text/plain' });
+                    response.write('Error interno del servidor');
+                    response.end();
+                } else {
+                    response.writeHead(200, { 'Content-Type': 'text/html' });
+                    response.write('<h1>Informacion enviada correctamente');
+                    response.write('<meta http-equiv="refresh" content="2;url=/">');
+                    response.end();
+                }
+            });
         });
-    }else{
+    } else{
 
         fs.readFile(file, (err, data)=> {     
             if(err){
