@@ -45,6 +45,7 @@
 }
 .otroContainer{
     display: inline-flex;
+    width:1300px;
 }
 .leftContainer{
     width: 500px;
@@ -65,12 +66,15 @@
     font-family: Arial;
     font-size: 20px;
     text-align: justify;
+    text-indent: 30px;
+    width: 400px;
 }
-ul li{
-    font-family: Arial;
-    font-size: 20px;
-    text-align: justify;
-    list-style:square;
+
+h1{
+    text-align: center;
+    font-family: Verdana;
+    margin: 30px;
+    border: 3px dotted brown;
 }
 .text h2{
     font-family: Arial;
@@ -80,4 +84,5 @@ ul li{
     color: #fff;
     margin: 10px;
     border: 5px solid brown;
+    width: 300px;
 }
