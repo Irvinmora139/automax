@@ -5,20 +5,22 @@ http.createServer((request, response)=> {
     const file = request.url == '/' ? './www/index.html' : `./www/${request.url}`;
 
     if (request.method === 'POST') {
-        let data = [];
-        request.on('data', (value) => {
-            data.push(value);
+        let data = '';
+        request.on('data', (chunk) => {
+            data += chunk;
         }).on('end', () => {
-            const params = Buffer.concat(data).toString();
-            
-            fs.appendFile('formulario.txt', params + '\n', (err) => {
+            const params = new URLSearchParams(data);
+    
+            fs.appendFile('formulario.txt', `Nombre: ${params.get('nombre')}\nCorreo: ${params.get('correo')}\nMensaje: ${params.get('mensaje')}\n\n`, (err) => {
                 if (err) {
+                    console.error(err);
                     response.writeHead(500, { 'Content-Type': 'text/plain' });
                     response.write('Error interno del servidor');
                     response.end();
                 } else {
                     response.writeHead(200, { 'Content-Type': 'text/html' });
-                    response.write('<h1>Informacion enviada correctamente');
+                    response.write('<h1>Informacion enviada correctamente</h1>');
+                    response.write('<p>Redireccionando...</p>');
                     response.write('<meta http-equiv="refresh" content="2;url=/">');
                     response.end();
                 }
