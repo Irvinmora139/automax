@@ -1,34 +1,57 @@
 .headerContainer {
     display: flex;
-    background-color:black;
+    background-color: #000000;
+    height: 4rem;
+}
+
+.logo{
+    display: flex;
+    flex: 1;
+    color: white;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    font-family: Arial;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    font-size: 27px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-    font-size: 25px;
+.navIcons{
+    height: 20px;
+    width: 20px;
+    margin-left: 4rem;
 }
 
-nav ul li a {
-    text-decoration: none; 
-    color: #fff;
+.navBar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.navBar nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.navBar nav ul li {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 20px; 
+}
+
+.navBar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 h2{
     text-align: center;
-    background-color: black;
-    color: #fff;
     font-size: 35px;
     height: 40px;
     font-family: Arial;
+}
+.page{
+    background-color: black;
+    color: #fff;
 }
 .contacto p{
     font-size: 25px;
@@ -70,11 +93,35 @@ h3{
 .email p{
     font-family: Verdana;
 }
+.contenedor{
+    display: inline-flex;
+}
+.redesSociales{
+    width: 400px;
+    display: 1;
+    align-items: left;
+}
 .redesSociales img[src]{
     width: 38px;
     height: 38px;
 }
 .redesSociales p{
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    color: rgb(162, 95, 95);
+}
+.mapa{
+    width: 400px;
+    display: 1;
+    align-items: right;
+}
+.mapa img[src]{
+    width: 350px;
+    height: 300px;
+    align-items: center;
+}
+.mapa p{
     font-size: 25px;
     font-family: Arial;
     text-align: center;

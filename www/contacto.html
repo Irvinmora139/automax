@@ -6,51 +6,70 @@
         <link rel="stylesheet" href="./css/contacto.css">
     </head>
     <body>
-        <div class="headerContainer">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./acercaDe.html">Acerca de</a></li>
-                </ul>
-            </nav>
+        <header>
+            <div class="headerContainer">
+                <div class="logo">
+                    <h2>Automax</h2>
+                </div>
+                <div class="navBar">
+                    <nav>
+                        <ul>
+                            <img class="navIcons" src="./icons/casa.png" alt="">
+                            <li><a href="./index.html">Inicio</a></li>
+                            <img class="navIcons" src="./icons/contactos.png" alt="">
+                            <li><a href="./contacto.html">Contacto</a></li>
+                            <img class="navIcons" src="./icons/acerca-de.png" alt="">
+                            <li><a href="./acercaDe.html">Acerca de</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="page">
+            <div class="contacto">
+                <h2>Contáctanos</h2>
+                <p>-- Comunícate con nosostros, tu opinión es importante para mejorar --</p>
+            
+                <form action="/" method="POST">  
+                    <label for="nombre">Nombre completo:</label>
+                    <input id="nombre" name="nombre" type="text"  required/>
+                    <label for="correo">Correo electrónico:</label>
+                    <input id="correo" name="correo" type="email"   required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+    
+            <div class="chat">
+                <img src="./images/mensaje.png" >
+                <h3>Chat</h3>
+            </div>
+            <div class="llamada">
+                <img src="./images/llamada.png">
+                <h3>Por teléfono</h3>
+                <p>Comunícate al: <strong>555-555-555-555</strong></p>
+            </div>
+            <div class="email">
+                <img src="./images/email.png">
+                <h3>Por correo</h3>
+                <p>Nuestro correo es: <strong>quejasysug@automax.mx</strong></p>
+            </div>
+            <div class="contenedor">
+                <div class="redesSociales">
+                <p>-- Síguenos en todas nuestras redes sociales --</p>
+                <a href="https://www.facebook.com"><img src="./images/feis.png"> </a>
+                <a href="https://www.instagram.com"><img src="./images/insta.png"></a>
+                <a href="https://www.twitter.com"><img src="./images/tuiter.png"> </a>
+                </div>
+                <div class="mapa">
+                    <p>Encuéntranos de manera fácil</p>
+                    <a href="https://www.google.com/maps/search/renta+de+autos/@28.7028558,-106.0488905,13z?entry=ttu"><img src="./images/maps.png" alt=""></a>
+                </div>
+            </div>
         </div>
-        <div class="contacto">
-            <h2>Contáctanos</h2>
-            <p>-- Comunícate con nosostros, tu opinión es importante para mejorar --</p>
         
-            <form action="/" method="POST">  
-                <label for="nombre">Nombre completo:</label>
-                <input id="nombre" name="nombre" type="text"  required/>
-                <label for="correo">Correo electrónico:</label>
-                <input id="correo" name="correo" type="email"   required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-
-        <div class="chat">
-            <img src="./images/mensaje.png" >
-            <h3>Chat</h3>
-        </div>
-        <div class="llamada">
-            <img src="./images/llamada.jpg">
-            <h3>Por teléfono</h3>
-            <p>Comunícate al: <strong>555-555-555-555</strong></p>
-        </div>
-        <div class="email">
-            <img src="./images/email.png">
-            <h3>Por correo</h3>
-            <p>Nuestro correo es: <strong>quejasysug@automax.mx</strong></p>
-        </div>
-        <div class="redesSociales">
-            <p>-- Síguenos en todas nuestras redes sociales --</p>
-            <a href="https://www.facebook.com"><img src="./images/feis.png"> </a>
-            <a href="https://www.instagram.com"><img src="./images/insta.png"></a>
-            <a href="https://www.twitter.com"><img src="./images/tuiter.png"> </a>
-        </div>
-
+        
         
     </body>
 </html>
