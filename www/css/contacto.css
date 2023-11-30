@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .headerContainer {
     display: flex;
     background-color: #000000;
@@ -57,7 +62,10 @@ h2{
     font-size: 25px;
     font-family: Arial;
     text-align: center;
-    color: rgb(162, 95, 95);
+    color: white;
+    margin: 10px;
+    border: 5px solid brown;
+    background-color: #ac5f5f;
 }
 
 .contacto{
@@ -97,33 +105,56 @@ h3{
     display: inline-flex;
 }
 .redesSociales{
-    width: 400px;
-    display: 1;
+    width: 500px;
     align-items: left;
 }
 .redesSociales img[src]{
-    width: 38px;
-    height: 38px;
+    width: 60px;
+    height: 60px;
 }
 .redesSociales p{
     font-size: 25px;
     font-family: Arial;
     text-align: center;
-    color: rgb(162, 95, 95);
+    height: 60px;
+    color: white;
+    margin: 10px;
+    border: 5px solid brown;
+    background-color: #ac5f5f;
 }
+.logos{
+    height: 200px;
+    justify-content: left;
+}
+.logos a{
+    display: inline;
+    width: 65px;
+    height: 60px;
+}
+#feis{
+    width: 65px;
+    height: 65px;
+}
+
 .mapa{
-    width: 400px;
-    display: 1;
-    align-items: right;
+    width: 500px;
+    display:block;
+}
+.imgMapa{
+    height: 100px;
 }
 .mapa img[src]{
-    width: 350px;
-    height: 300px;
-    align-items: center;
+    width: 265px;
+    height: 195px;
+    margin-left: 100px;
 }
 .mapa p{
     font-size: 25px;
     font-family: Arial;
     text-align: center;
-    color: rgb(162, 95, 95);
+    height: 60px;
+    color: white;
+    margin: 10px;
+    border: 5px solid brown;
+    background-color: #ac5f5f;
 }
